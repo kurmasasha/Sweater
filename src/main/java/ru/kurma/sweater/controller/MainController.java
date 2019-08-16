@@ -1,4 +1,4 @@
-package ru.kurma.sweater;
+package ru.kurma.sweater.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,10 +10,10 @@ import ru.kurma.sweater.repository.MessageRepository;
 import java.util.Map;
 
 @Controller
-public class GreetingController {
+public class MainController {
     private final MessageRepository messageRepository;
 
-    public GreetingController(MessageRepository messageRepository) {
+    public MainController(MessageRepository messageRepository) {
         this.messageRepository = messageRepository;
     }
 
