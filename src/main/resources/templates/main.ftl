@@ -14,7 +14,7 @@
     </div>
     <div>Список сообщений</div>
     <form method="get" action="/main">
-        <input type="text" name="filter" value="${filter}">
+        <input type="text" name="filter" value="${filter!}">
         <button type="submit">Найти</button>
     </form>
     <#list messages as message>
@@ -27,5 +27,4 @@
         <#else>
         No message
     </#list>
-
 </@c.page>
